@@ -1,0 +1,6 @@
+<h3 id="loginhead">Log In</h3>
+<label>Username</label><br>
+<input class="inputData" type="text" name="username" [(ngModel)]="employee.username" ><p>{{errorMessageName}}</p><br>
+<label>Password</label><br>
+<input class="inputData" type="password" name="password" [(ngModel)]="employee.password" ><p>{{errorMessagePass}}</p><br>
+<button class="loginbtn" id="loginbtn" (click)="userLogIn()">Log In</button>

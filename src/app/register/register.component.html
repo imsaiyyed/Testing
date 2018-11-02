@@ -1,0 +1,8 @@
+<h3 id="registerhead">Register new user</h3>
+<label>Username</label><br>
+<input class="inputData" type="text" name="username" [(ngModel)]="employee.username" ><p>{{errorMessageName}}</p><br>
+<label>City</label><br>
+<input class="inputData" type="text" name="city" [(ngModel)]="employee.city" ><p>{{errorMessageCity}}</p><br>
+<label>Password</label><br>
+<input class="inputData" type="password" name="password" [(ngModel)]="employee.password" ><p>{{errorMessagePass}}</p><br>
+<button class="adduserbtn" id="adduserbtn" (click)="addUser()">Add user</button>

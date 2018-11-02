@@ -1,0 +1,27 @@
+
+  <h1 id="employeehead">Welcome</h1>
+<button id="addButton"  (click)="addUser()">Add User</button> 
+<div>
+  <table class="tableStyle" cellspacing="20">
+    <thead>
+      <tr>
+        <td>UserName</td>
+        <td>City</td>
+        <td></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employeeList; index as a">
+        <td>{{ emp.username }}</td>
+        <td>{{ emp.city }}</td>
+        <td>  <button id="deleteButton" name={{emp.username}} (click)="deleteUser($event)">Delete</button>   </td>
+      </tr>
+      <tr *ngIf="employeeList.length === 0 || !employeeList">
+        <td colspan="5">
+          No Data
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
